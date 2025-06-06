@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dennis Nduto | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+    
+      position: relative;
+      min-height: 100vh;
+      color: #f0f0f0;
+    }
+
+    /* Glass blur overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+
+  
+      z-index: -1;
+    }
+
+    header, section {
+      background: rgba(0, 0, 0, 0.349);
+      backdrop-filter: blur(19px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 900px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background: linear-gradient(90deg, #00ffff, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  
+    }
+
+    header p {
+      color: #ccc;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #0ff;
+      object-fit: cover;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 0 15px #0ff, 0 0 25px #ff00ff66;
+    }
+
+    h2 {
+      color: #00ffff;
+ 
+      margin-bottom: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid #0ff;
+      color: #0ff;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 8px #0ff;
+    }
+
+    .project h3 {
+      color: #0dd5f0;
+    
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+ 
+
+    .contact {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: #0ff;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-item i {
+  font-size: 18px;
+  margin-right: 12px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 255, 255, 0.1);
+  color: #0cf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.contact-item a {
+  color: #0cf;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #0ff;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="passport.jpg" alt="Dennis Nduto's Profile Picture" class="profile-pic">
+    <h1>Dennis Nduto</h1>
+    <p>Software Developer | IT Student | Network Enthusiast | CyberSecurity</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m a BSc IT student at Murang’a University of Technology, currently on attachment at Kenyatta National Hospital ICT department. I love building apps, designing networks, and learning new technologies.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>PHP</span>
+      <span>MySQL</span>
+      <span>JavaScript</span>
+      <span>HTML & CSS</span>
+      <span> Node JS</span>
+      <span>React</span>
+      <span>Git & GitHub</span>
+      <span>Cisco Packet Tracer</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Student Grading & Course Recommender</h3>
+      <p>A PHP & MySQL system that recommends courses based on students' grades.</p>
+      <p><strong>Tech Used:</strong> PHP, MySQL, HTML</p>
+    </div>
+    <div class="project">
+      <h3>University Network Simulation</h3>
+      <p>Configured VLANs and secure network setup using Cisco Packet Tracer.</p>
+      <p><strong>Tech Used:</strong> Cisco Packet Tracer</p>
+    </div>
+    <div class="project">
+        <h3>Room Allocation System</h3>
+        <p>A web-based system that automates room assignment for students based on availability, preferences, and eligibility.</p>
+        <p><strong>Tech Used:</strong> PHP, MySQL, HTML/CSS, JavaScript</p>
+      </div>
+      
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+  
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:dennisnduto418@gmail.com">Email</a>
+    </div>
+  
+    <div class="contact-item">
+      <i class="fab fa-github"></i>
+      <a href="https://github.com/dennisnduto" target="_blank">GitHub</a>
+    </div>
+  
+    <div class="contact-item">
+      <i class="fab fa-linkedin"></i>
+      <a href="https://linkedin.com/in/dennis-nduto-42a256250" target="_blank">linkedin Profile</a>
+    </div>
+  
+    <div class="contact-item">
+      <i class="fab fa-instagram"></i>
+      <a href="https://instagram.com/yourusername" target="_blank">instagram</a>
+    </div>
+
+    <div class="contact-item">
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/254112889707" target="_blank">WhatsApp</a>
+      </div>
+  </section>
+  
+  
+
+  <footer>
+    <p>© 2025 Dennis Nduto • Built with 💻 and 🖤</p>
+  </footer>
+
+</body>
+</html>
